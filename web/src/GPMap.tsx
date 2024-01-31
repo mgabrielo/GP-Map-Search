@@ -54,11 +54,13 @@ export default function GPMap() {
             params: { lat: userLocation.lat, lng: userLocation.lng },
           })
           .then((res) => {
-            setUserLocation({
-              lat: Number(currentLatitude),
-              lng: Number(currentLongitude),
-            });
-            setGps(res.data);
+            if (res.status == 200 && res.data) {
+              setUserLocation({
+                lat: Number(currentLatitude),
+                lng: Number(currentLongitude),
+              });
+              setGps(res.data);
+            }
           })
           .catch((err) => {
             console.log(err.message);
@@ -123,7 +125,7 @@ export default function GPMap() {
           <h2 className={styles.ListViewHeaderText}>List of Doctors</h2>
           <div className={styles.ListScrollView}>
             {gps &&
-              gps?.length &&
+              gps?.length > 0 &&
               gps.map((item: any, index: any) => {
                 if (item) {
                   return (
@@ -181,6 +183,7 @@ export const GPMapIcon = ({ gp, text, onClick, isIcon, index }: any) => {
           fontSize: 15,
           fontWeight: "bold",
           borderRadius: 10,
+          zIndex: 50,
         }}
       >
         {text}
