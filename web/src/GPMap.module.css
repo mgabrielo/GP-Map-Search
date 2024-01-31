@@ -1,0 +1,69 @@
+.mapIcon {
+  background-color: white;
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0 0 2px #888;
+  padding: 0.4em 0.5em;
+  position: relative;
+}
+
+.gridStyle{
+  display: grid;
+ grid-template-columns: .9fr .3fr;
+width: 100%;
+}
+
+.mapStyle{
+  display: "block";
+  position: "relative";
+  width: 100%;
+  height: calc(100vh - 60px);
+}
+
+.listView{
+  display: block;
+  background-color: #2d78b6;
+  max-height: 90vh;
+}
+
+.ListScrollView{
+  background-color: #2d78b6;
+  max-height: 82vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.ListItemView{
+  cursor: pointer;
+  height: auto;
+  padding-left: auto;
+  padding-right: auto;
+}
+.listView span{
+  display: flex;
+  width: 100%;
+  color: #fff;
+  align-Items: center;
+  padding-left: 5;
+  padding-right: 5;
+}
+.divider{
+  border: 1px solid #fff;
+  width: 100%;
+}
+
+.ListViewHeaderText{
+  font-size: large;
+  text-align: center;
+  color: azure;
+}
+.ListItemText{
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+  font-size: 16;
+  font-weight: 500;
+  margin:0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
