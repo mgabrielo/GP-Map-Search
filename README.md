@@ -44,7 +44,7 @@ Briefly answer the following questions (a few bullet points or high level answer
   -Typescript : for type validations, error checking and better readabliity of data and functions
 
 3. What technology are you most excited about right now?
-   -React ,Node, NextJs , GraphQl, AWS, MongoDb, Postgres, TailWind / Headless UI
+   -React ,Node, NextJs , GraphQl, AWS, MongoDb, Postgres, TailWind / Headless UI, React Native
 4. What is "good code" to you?
 
 - A good code consist of reusable components and functions
